@@ -4,6 +4,21 @@
 <!-- For unreleased changes, see entries in .chloggen -->
 <!-- next version -->
 
+## [0.108.0] - 2024-08-31
+
+This Splunk OpenTelemetry Collector for Kubernetes release adopts the [Splunk OpenTelemetry Collector v0.108.1](https://github.com/signalfx/splunk-otel-collector/releases/tag/v0.108.1).
+
+### 💡 Enhancements 💡
+
+- `agent`: Add a feature gate `useControlPlaneMetricsHistogramData` ([#1372](https://github.com/signalfx/splunk-otel-collector-chart/pull/1372))
+  This feature gate allows to gather control plane metrics and send them as histogram data to Observability Cloud.
+  This is an experimental feature under heavy development.
+  
+
+### 🧰 Bug fixes 🧰
+
+- `targetAllocator`: Fix the name of the service account token given when featureGates.explicitMountServiceAccountToken is true ([#1427](https://github.com/signalfx/splunk-otel-collector-chart/pull/1427))
+
 ## [0.105.5] - 2024-08-28
 
 This Splunk OpenTelemetry Collector for Kubernetes release adopts the [Splunk OpenTelemetry Collector v0.105.0](https://github.com/signalfx/splunk-otel-collector/releases/tag/v0.105.0).
